@@ -12,7 +12,7 @@
 
 4. Dataset: [`Restaurants_in_Durham_County_NC.csv`](./Restaurants_in_Durham_County_NC.csv) \
    Solve: Show the type and count of restaurant opened during the 90’s (1990-1999 inclusive). \
-   NOTE: type=”Rpt_Area_Desc”
+   NOTE: `type`=`Rpt_Area_Desc`
 
 5. Dataset: [`populationbycountry19802010millions.csv`](./populationbycountry19802010millions.csv) \
    Solve: For region, compute the percentage change in population, year over year. \
@@ -25,3 +25,9 @@
 7. Dataset: [`Restaurants_in_Durham_County_NC.csv`](./Restaurants_in_Durham_County_NC.csv), [`durham-nc-foreclosure-2006-2016.json`](./durham-nc-foreclosure-2006-2016.json) \
    Solve: For each restaurant (`Restaurants_in_Durham_County_NC`) with `status`=`ACTIVE` and `rpt_area_desc`=`Food Service`, show the number of foreclosures (`durham-nc-foreclosure-2006-2016`) within a radius of 1 mile of the restaurant’s coordinates. \
    NOTE: Use any assumption for the shape of Earth or you can use the [Haversine distance](https://pypi.org/project/haversine/)
+
+---
+
+Solutions: [hw3.ipynb](./hw3.ipynb)
+
+https://csgy-6513-spring.rcnyu.org/
