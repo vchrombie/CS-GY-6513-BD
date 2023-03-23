@@ -1,0 +1,16 @@
+best,cat	1.00	B
+best,cat	1.00	U
+cat,in	1.00	B
+cat,in	1.00	U
+hat,is	0.33	B
+hat,is	0.67	U
+in,the	0.50	B
+in,the	0.50	U
+is,the	0.20	B
+is,the	0.20	U
+the,best	0.17	B
+the,best	0.67	U
+the,cat	0.14	B
+the,cat	0.67	U
+the,hat	0.25	B
+the,hat	0.67	U

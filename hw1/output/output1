@@ -1,0 +1,14 @@
+best	1.00
+best,cat	1.00
+cat	1.00
+cat,in	1.00
+hat	0.67
+hat,is	0.33
+in	0.50
+in,the	0.50
+is	0.20
+is,the	0.20
+the	0.67
+the,best	0.17
+the,cat	0.14
+the,hat	0.25
