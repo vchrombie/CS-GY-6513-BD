@@ -27,6 +27,11 @@ Create a random subset of 50k entries of this data using Reservoir Sampling. The
 1. Implement Reservoir Sampling in Hadoop MapReduce
 2. Implement Reservoir Sampling in Spark
 
+## Solution
+- [Implementation in Hadoop MapReduce](qn1-hadoop)
+- [Implementation in Spark](qn1-spark)
+
+---
 
 ## Probabilistic Set Membership
 
@@ -59,6 +64,12 @@ The data structure is a bit array, onto which elements are mapped using hash fun
 
 Use [PyBloom](https://pypi.org/project/pybloom/). PyBloom is already installed in the JupyuterHub environment for this class.
 
+## Solution
+
+[`qn2.ipynb`](qn2.ipynb)
+
+---
+
 ## Duplicate Detection
 
 ### Problem Statement
@@ -82,3 +93,7 @@ The Minhash/LSH algorithm relies on the concept of distances to define similarit
 ### NOTE
 
 For this problem, you can use the [Python version in datasketch](http://ekzhu.com/datasketch/minhash.html). Datasketch is already installed in the JupyterHub environment for this class. You could use Spark ML that has Minhash/LSH library.
+
+## Solution
+
+[`qn3.ipynb`](qn3.ipynb)
