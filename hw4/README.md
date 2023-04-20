@@ -1,5 +1,7 @@
 # Homework 4
 
+## Q0. Load all datasets into MongoDB
+
 ## Q1. Write MongoDB queries for
 
 Datasets: [`restaurants.json`](./restaurants.json)
@@ -13,9 +15,9 @@ Datasets: [`restaurants.json`](./restaurants.json)
 7. Display the first 5 restaurants in the Bronx.
 8. Display the second 5 restaurants (skipping the first 5) in the Bronx.
 9. Find the restaurants with a score more than 85.
-10. Find the restaurants that achieved a score, more than 80 but less than 100.
-11. Find the restaurants which locate in latitude value less than -95.754168.
-12. Find the restaurants that do not prepare any cuisine of 'American' and their grade score more than 70 and latitude less than -65.754168.
+10. Find the restaurants that achieved a score, in between 80 and 100.
+11. Find the restaurants which locate in [lat,lon] where latitude <= -95.75 and longitude <= -73.90.
+12. Find the restaurants that do not prepare any cuisine of 'American' and their grade score more than 70 and longitude less than -65.754168.
 13. Find the restaurants which do not prepare any cuisine of 'American' and achieved a score more than 70 and located in the longitude less than -65.754168. (without using $and operator).
 14. Find the restaurants which do not prepare any cuisine of 'American ' and achieved a grade point 'A'  and not in the borough of Brooklyn, sorted by cuisine in descending order.
 15. Find the restaurant Id, name, borough and cuisine for those restaurants which contain 'Wil' as first three letters for its name.
@@ -38,8 +40,7 @@ Datasets:
 - [`durham-nc-foreclosure-2006-2016.json`](./durham-nc-foreclosure-2006-2016.json)
 - [`Restaurants_in_Durham_County_NC.csv`](./Restaurants_in_Durham_County_NC.csv)
 
-1. Find the center point (geolocation) for the region that includes all `Rpt_Area_Desc=”restaurants”` and `Seats>=100` in the dataset.
-2. Find the number of foreclosures within 1 mile of the Point in Q2.1 above.
+Find the number of foreclosures within the _polygon_ defined as all restaurants where `Rpt_Area_Desc=”Food Service”` and `Seats>=100`.
 
 ## Q3. Extra Credit
 
