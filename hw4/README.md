@@ -2,6 +2,53 @@
 
 ## Q0. Load all datasets into MongoDB
 
+```bash
+# restaurants
+mongoimport --db vt2182 --collection restaurants \
+-h mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182 \
+--file restaurants.json --jsonArray
+
+# durham_restaurants
+tr ";" "\t" < Restaurants_in_Durham_County_NC.csv > Restaurants_in_Durham_County_NC.tsv
+
+mongoimport --db vt2182 --collection durham_restaurants \
+-h mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182 \
+--file Restaurants_in_Durham_County_NC.tsv --headerline --type tsv
+
+# durham_foreclosures
+mongoimport --db vt2182 --collection durham_foreclosures \
+-h mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182 \
+--file durham-nc-foreclosure-2006-2016.json --jsonArray
+
+# meteorites
+mongoimport --db vt2182 --collection meteorites \
+-h mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182 \
+--file meteorites.json
+
+# worldcities
+mongoimport --db vt2182 --collection worldcities \
+-h mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182 \
+--file worldcities.csv --headerline --type csv
+```
+
+```bash
+mongosh --host mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182
+
+vt2182> use vt2182
+
+vt2182> show collections
+durham_foreclosures
+durham_restaurants
+meteorites
+restaurants
+worldcities
+
+vt2182> db.restaurants.count()
+3772
+```
+
+![](./q0.png)
+
 ## Q1. Write MongoDB queries for
 
 Datasets: [`restaurants.json`](./restaurants.json)
@@ -53,3 +100,23 @@ Use the MongoDB geospatial facilities to *find the nearest city to each meteorit
 Note: 
 - `worldcities` is a CSV file. You will need to import into MongoDB AND clean-up the double quotes.
 - Use the `$near` operator and select this closest entry per city.
+
+---
+
+# Solutions
+
+## Q1
+
+[q1.js](./q1.js)
+
+```bash
+mongosh --host mongo-csgy-6513-spring.db --authenticationDatabase vt2182 -u vt2182 -p vt2182 < q1.js
+```
+
+[q1.ipynb](./q1.ipynb)
+
+## Q2, Q3
+
+[q23.ipynb](./q23.ipynb)
+
+https://csgy-6513-spring.rcnyu.org/

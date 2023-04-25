@@ -28,6 +28,8 @@
 
 ---
 
-Solutions: [hw3.ipynb](./hw3.ipynb)
+# Solutions
+
+[hw3.ipynb](./hw3.ipynb)
 
 https://csgy-6513-spring.rcnyu.org/
