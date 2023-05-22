@@ -7,3 +7,4 @@ Course Repository for CS-GY 6513: Big Data
 - [Midterm](./midterm/): Hadoop & Spark
 - [Homework 4](./hw4/): MongoDB
 - [Project](https://github.com/vchrombie/nyc-taxi-fare-prediction): Final project
+- [Homework 5](./hw5/): Dask
